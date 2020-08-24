@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(228, 207, 200) !important; 
+}
+
+nav{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(179, 42, 21) 100%);
+}
+
+.menu__lista{
+
+    li{
+        padding-left:15px;
+        padding-right:15px;
+
+        a{
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+
+    }
+
+    .menu__lista__items:hover{
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
+        transform: scale(.98, 1.1);
+    }
+
+}
+
+.mazo__logo{
+    color: white;
+    margin: 5px;
+    animation-name: martillo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes martillo {
+    from {
+        
+    }
+    to {
+        transform: rotate(-90deg)
+    }
+}
+
+img.images__circulo{
+    margin: 50px 0 25px 0;
+    border-radius: 50%;
+    object-position: 50% 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.container__section__padding-top{
+    padding-top: 20px;
+}
+
+.section__icono__fa{
+    color: black;
+    font-size:50px;
+    margin-right: 10px;
+}
+
+section div p{
+    text-align: justify;
+}
+
+.margen__titulos{
+    margin-top: 40px;
+}
+
+/* footer */
+
+footer{
+    background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
+    padding: 20px 0px;
+    margin-top: 50px;
+
+    a, a:hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    .footer__columnas{
+        color: white;
+
+        ul{
+            margin:0;
+            padding: 0;
+        }
+
+        i{
+            padding-right: 5px;
+        }
+    }
+}
+
+
+form{
+    padding-bottom: 20px;
+
+    .btn{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .btn-info.custom-btn {
+        background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
+        border-color: black;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    *{
+        font-size: 0.98em;
+    }
+    #carouselWeb, .ocultar__div__servicios {
+      display: none;
+    }
+    header{
+        margin-top: 50px;
+    }
+    
+    footer{
+        padding-left: 20px;
+        .footer__columnas{
+            padding: 10px 0;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .ocultar__div__servicios {
+      display: none;
+    }
+
+  }

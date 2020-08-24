@@ -1,0 +1,158 @@
+body {
+  background-color: #e4cfc8 !important;
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#b32a15));
+  background: linear-gradient(180deg, black 0%, #b32a15 100%);
+}
+
+.menu__lista li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu__lista li a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__lista .menu__lista__items:hover {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
+  -webkit-transform: scale(0.98, 1.1);
+          transform: scale(0.98, 1.1);
+}
+
+.mazo__logo {
+  color: white;
+  margin: 5px;
+  -webkit-animation-name: martillo;
+          animation-name: martillo;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes martillo {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+@keyframes martillo {
+  from {
+  }
+  to {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+img.images__circulo {
+  margin: 50px 0 25px 0;
+  border-radius: 50%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container__section__padding-top {
+  padding-top: 20px;
+}
+
+.section__icono__fa {
+  color: black;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+section div p {
+  text-align: justify;
+}
+
+.margen__titulos {
+  margin-top: 40px;
+}
+
+/* footer */
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b32a15), to(black));
+  background: linear-gradient(180deg, #b32a15 0%, black 100%);
+  padding: 20px 0px;
+  margin-top: 50px;
+}
+
+footer a, footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .footer__columnas {
+  color: white;
+}
+
+footer .footer__columnas ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer__columnas i {
+  padding-right: 5px;
+}
+
+form {
+  padding-bottom: 20px;
+}
+
+form .btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+form .btn-info.custom-btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b32a15), to(black));
+  background: linear-gradient(180deg, #b32a15 0%, black 100%);
+  border-color: black;
+}
+
+@media only screen and (max-width: 767px) {
+  * {
+    font-size: 0.98em;
+  }
+  #carouselWeb, .ocultar__div__servicios {
+    display: none;
+  }
+  header {
+    margin-top: 50px;
+  }
+  footer {
+    padding-left: 20px;
+  }
+  footer .footer__columnas {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .ocultar__div__servicios {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
